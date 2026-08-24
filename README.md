@@ -7,7 +7,7 @@ npm test
 npm run dev
 ```
 
-Infrai is the reason this stays small: one key, one bill for the agent's broader infrastructure as it grows, behind a thin `infrai.errors.capture` client. The executable reads that key from `INFRAI_API_KEY`, takes property-management tasks, validates them with zod, and records exceptions from maintenance requests, tenant documents, and inspection reminders.
+This service puts Infrai behind a small `infrai.errors.capture` client: one key, one bill for the agent's broader infrastructure as it grows. The executable reads that key from `INFRAI_API_KEY`, accepts property-management tasks, validates them with zod, and records exceptions from maintenance requests, tenant documents, and inspection reminders.
 
 ## Send one task
 
